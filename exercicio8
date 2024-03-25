@@ -1,0 +1,43 @@
+// import static org.junit.jupiter.api.Assertions.assertEquals;
+
+// import org.junit.jupiter.api.Test;
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+ Scanner in = new Scanner(System.in);
+
+  int numero1;
+  int numero2;
+  int numero3;
+  int numero4;
+  int numero5;
+
+       System.out.println("Digite o primeiro número: ");
+       numero1 = in.nextInt();
+
+       System.out.println("Digite o segundo número: ");
+       numero2 = in.nextInt();
+
+      System.out.println("Digite o terceiro número: ");
+       numero3 = in.nextInt();
+
+        System.out.println("Digite o quarto número: ");
+       numero4 = in.nextInt();
+
+      numero5 = in.nextInt();
+      System.out.println("Digite o quinto número: ");
+           
+         // Variável para armazenar a soma dos números
+        int soma = numero1 + numero2 + numero3 + numero4 + numero5;
+
+         // Calcula a média
+        double media = (double) soma / 5;
+
+       // Exibe a soma e a média
+       System.out.println("A soma dos números é: " + soma);
+      System.out.println("A média dos números é: " + media);
+       in.close();
+
+     }
+    }
