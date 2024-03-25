@@ -1,49 +1,62 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
 import java.util.Scanner;
 
+  import java.util.Scanner;
 
-public class Main {
-  public static void main(String[] args) {
-   Scanner in = new Scanner(System.in);
+  public class Main {
+      public static void main(String[] args) {
+          Scanner in = new Scanner(System.in);
 
-    int numero1;
-    int numero2;
-    int numero3;
-    int numero4;
-    int numero5;
-    int numeromaior
+   int numero1;
+   int numero2;
+   int numero3;
+   int numero4;
+   int numero5;
 
-    System.out.println("Digite o primeiro número: ");
-    numero1 = in.nextInt();
+  System.out.println("Digite o primeiro número: ");
+   numero1 = in.nextInt();
 
-    System.out.println("Digite o segundo número: ");
+   System.out.println("Digite o segundo número: ");
     numero2 = in.nextInt();
 
-     System.out.println("Digite o terceiro número: ");
+   System.out.println("Digite o terceiro número: ");
     numero3 = in.nextInt();
 
-     System.out.println("Digite o quarto número: ");
-    numero4 = in.nextInt();
+   System.out.println("Digite o quarto número: ");
+   numero4 = in.nextInt();
 
-     System.out.println("Digite o quinto número: ");
-    numero5 = in.nextInt();
+   System.out.println("Digite o quinto número: ");
+   numero5 = in.nextInt();
 
-     int maiorNumero = Integer.MIN_VALUE;
+        // Variável para armazenar o maior número
+      int maiorNumero = numero1;
 
-     for (int numeromaior = 1; i <= 5; i++) {
-     System.out.print("Digite o " + i + "º número: ");
-     int numero = scanner.nextInt();
-       
-     // Atualiza o maior número
-     if (numero > maiorNumero) {
-     maiorNumero = numeromaior;
-              
+       // Verifica se o segundo número é maior que o maior número atual
+      if (numero2 > maiorNumero) {
+              maiorNumero = numero2;
+          }
+
+       // Verifica se o terceiro número é maior que o maior número atual
+       if (numero3 > maiorNumero) {
+              maiorNumero = numero3;
+          }
+
+       // Verifica se o quarto número é maior que o maior número atual
+       if (numero4 > maiorNumero) {
+              maiorNumero = numero4;
+          }
+
+       // Verifica se o quinto número é maior que o maior número atual
+      if (numero5 > maiorNumero) {
+              maiorNumero = numero5;
+          }
+
+       // Exibe o maior número
+       System.out.println("Maior número: " + maiorNumero);
+
+      in.close();
       }
-        // Exibe o maior número
-      System.out.println("Maior número: " + maiorNumero);
+  }
 
-       
-        }
-    }
+      
+    
+
